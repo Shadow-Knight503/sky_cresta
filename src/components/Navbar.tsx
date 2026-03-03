@@ -1,12 +1,15 @@
 import SampleIcon from "../assets/HardHatOnGear.png"
 import {Link} from "react-router-dom";
 
-function Navbar() {
+interface NavProps {
+    scrollToFooter: () => void
+}
+
+function Navbar({scrollToFooter}: NavProps) {
     const navCont = [
         {nme: "About Us", lnk: "/about"},
         {nme: "Services", lnk: "/services"},
         {nme: "Gallery", lnk: "/gallery"},
-        {nme: "Contact Us", lnk: "/contact"},
     ]
 
     return (
@@ -18,10 +21,12 @@ function Navbar() {
                          alt="Company logo"/>Sky Cresta Solutions</h2></Link>
             <ul className="grow flex gap-8 justify-end">
                 {navCont.map((navItm) => (
-                    <Link to={navItm.lnk}>
+                    <Link to={navItm.lnk} key={navItm.lnk}>
                         <p className="hover:text-orange-500 hover:underline underline-offset-4
                             transition-colors duration-200">{navItm.nme}</p></Link>
                 ))}
+                <p className="hover:text-orange-500 hover:underline underline-offset-4
+                    transition-colors duration-200" onClick={scrollToFooter}>Contact Us</p>
             </ul>
         </nav>
     )
