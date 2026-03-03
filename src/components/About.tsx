@@ -9,7 +9,7 @@ function About() {
     };
 
     const countData = [
-        {data: '[--num:40]', name: "Projects"},
+        {data: '[--num:50]', name: "Projects"},
         {data: '[--num:900]', name: "Contracts"},
         {data: '[--num:1200]', name: "Engineers"},
         {data: '[--num:15]', name: "Publications"},
@@ -17,7 +17,7 @@ function About() {
 
     const { ref, inView } = useInView({
         triggerOnce: true, // Only trigger the animation once
-        threshold: 0.1,    // Trigger when 10% of the element is visible
+        threshold: 0.2,    // Trigger when 10% of the element is visible
     });
 
     return (
@@ -39,12 +39,11 @@ function About() {
                     {countData.map((count, ind) => (
                         <span ref={ref} key={ind}
                             className={`flex tabular-nums text-5xl relative 
-                                font-extrabold mb-2 transition-[_--num] duration-[3s] 
+                                font-bold mb-2 transition-[_--num] duration-[3s] 
                                 ease-out [counter-set:_num_var(--num)] text-orange-500 
-                                supports-[counter-set]:before:content-[counter(num)] ${
-                                inView ? `${count.data}` : '[--num:0]'
-                            }`}>
-                            <span className="supports-[counter-set]:sr-only">40</span>+
+                                supports-[counter-set]:before:content-[counter(num)] 
+                                ${inView ? `${count.data}` : '[--num:0]'}`}>
+                            <span className="supports-[counter-set]:sr-only">0</span>+
                             <span className="absolute bottom-[-70%] text-lg text-white font-normal mb-2">
                                 {count.name}</span>
                       </span>
