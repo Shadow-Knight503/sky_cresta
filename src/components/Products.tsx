@@ -10,7 +10,7 @@ function Products() {
                     hover:scale-120 transition-transform duration-200 ease-in-out
                     text-white font-semibold">
                     <h2 className="text-4xl font-titl">{prod}</h2>
-                    <hr className="my-2 w-1/3 text-orange-500" />
+                    <hr className="my-2 w-1/3 text-orange-500 border-t-4" />
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque deleniti harum</p>
                 </div>
             ))}
