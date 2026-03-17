@@ -5,34 +5,27 @@ function VisMis() {
     return (
         <article className="px-24 mt-24">
             <section className="flex mt-8 justify-center">
-                <h3 className="text-3xl text-orange-500 basis-1/2 py-2 pr-8">Our Vision
-                    <p className="text-lg text-white mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Architecto, aspernatur cumque dicta dolore dolorem eius et ipsam magnam mollitia officiis
-                        perspiciatis quidem ratione sapiente tempora vel vero voluptas voluptate voluptatum! Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                    <ul className="text-lg text-white list-disc list-inside mt-4">
-                        <li>Stuff to do</li>
-                        <li>More stuff to do</li>
-                        <li>Some more stuff to do</li>
-                        <li>Last few stuff to do</li>
+                <h3 className="text-4xl text-prim font-titl basis-1/2 py-2 pl-8 my-auto">Why Choose Skycresta Solutions?
+                    <ul className="text-xl text-text font-prim list-disc mt-4 list-disc">
+                        <li>South India-Based Infrastructure Expertise</li>
+                        <li>Integrated Engineering Solutions Under One Roof</li>
+                        <li>Structured Project Planning & Execution</li>
+                        <li>Dedicated Service & After-Sales Team</li>
+                        <li>Transparent Communication & Timely Delivery</li>
+                        <li>Strong Vendor & Supply Chain Network Across South India</li>
                     </ul>
                 </h3>
                 <img className="basis-1/3 w-12 rounded-2xl" src={VisionImg} alt="Vision Img"/>
             </section>
             <section className="flex mt-8 justify-center">
                 <img className="basis-1/3 w-12 rounded-2xl" src={MissionImg} alt="Mission Img"/>
-                <h3 className="text-3xl text-orange-500 basis-1/2 py-2 pl-8">Our Mission
-                    <p className="text-lg text-white mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Architecto, aspernatur cumque dicta dolore dolorem eius et ipsam magnam mollitia officiis
-                        perspiciatis quidem ratione sapiente tempora vel vero voluptas voluptate voluptatum! Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                    <ul className="text-lg text-white list-decimal list-inside mt-4">
-                        <li>Stuff to do</li>
-                        <li>More stuff to do</li>
-                        <li>Some more stuff to do</li>
-                        <li>Last few stuff to do</li>
+                <h3 className="text-4xl text-prim font-titl basis-1/2 py-2 pl-16 my-auto">Operational Strength
+                    <ul className="text-xl text-text font-prim list-decimal list-outside list-disc mt-4">
+                        <li>Skilled Engineering & Technical Team</li>
+                        <li>Modern Equipment Fleet</li>
+                        <li>Structured Project Management Systems</li>
+                        <li>Quality Control & Monitoring Processes</li>
+                        <li>Safety & Compliance Standards</li>
                     </ul>
                 </h3>
             </section>

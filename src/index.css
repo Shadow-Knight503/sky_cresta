@@ -11,4 +11,18 @@
 @theme {
     --font-titl: "Oswald", sans-serif;
     --font-prim: "Roboto", sans-serif;
+
+    --color-prim: navy;
+    --color-secd: grey;
+    --color-back: white;
+    --color-accn: silver;
+    --color-text: black;
+
+    --animate-gears: Gearing 5s ease infinite;
+
+    @keyframes Gearing {
+        100% {
+            rotate: 360deg;
+        }
+    }
 }

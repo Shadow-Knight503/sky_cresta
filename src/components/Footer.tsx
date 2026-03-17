@@ -12,12 +12,15 @@ const Footer = forwardRef((_props, ref: Ref<HTMLDivElement>) => {
 
     return (
         <footer ref={ref} className="w-screen flex bg-black mt-12">
-            <div className="basis-1/2 p-12 text-white text-lg">
+            <div className="basis-1/2 p-12 text-white text-justify text-lg">
                 <h2 className="font-titl text-4xl">Contact</h2>
                 <hr className="text-orange-500 w-10 border-t-6 my-2"/>
-                <p>Hundred Streets Avenue</p>
-                <p>Example City, Sample State</p>
-                <p>+91 99969 42069</p>
+                <p>Email: support@skycrestasolutions.com</p>
+                <p>Phone: +91- 91594 91593</p>
+                <p>Website: www.skycrestasolutions.com</p>
+                <p className="mt-4">For project inquiries, machinery rental, civil construction, or interior services in southindia,
+                    contact our team today.</p>
+                <button className="bg-accn text-prim font-bold p-2 rounded-lg float-right">Request Consultation Form</button>
                 <h3 className="text-2xl mt-12 font-titl">Follow Us on</h3>
                 <div className="flex gap-2 mt-2">
                     {socials.map((social) => (

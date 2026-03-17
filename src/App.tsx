@@ -14,7 +14,7 @@ function App() {
     };
 
     return (
-        <main className="bg-gray-950 pt-14 min-h-screen overflow-hidden">
+        <main className="bg-back pt-14 min-h-screen overflow-hidden">
             <Navbar scrollToFooter={scrollToFooter} />
             <Outlet />
             <Footer ref={footerRef} />

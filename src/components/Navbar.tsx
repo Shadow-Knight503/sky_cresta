@@ -1,4 +1,4 @@
-import SampleIcon from "../assets/HardHatOnGear.png"
+import Icon from "../assets/CrestaLogo.png"
 import {Link} from "react-router-dom";
 
 interface NavProps {
@@ -13,19 +13,19 @@ function Navbar({scrollToFooter}: NavProps) {
     ]
 
     return (
-        <nav className="fixed top-0 w-screen z-50 flex items-center bg-gray-950
-            text-white font-prim text-lg px-[10vmin]">
+        <nav className="fixed top-0 w-screen z-50 flex items-center bg-back
+            text-prim font-prim text-lg px-[10vmin]">
             <Link to={"/"}>
                 <h2 className="font-titl flex items-center text-3xl basis-2/3">
-                    <img className="size-12 my-2 p-2 grayscale brightness-200" src={SampleIcon}
-                         alt="Company logo"/>Sky Cresta Solutions</h2></Link>
-            <ul className="grow flex gap-8 justify-end">
+                    <img className="size-16 m-2" src={Icon}
+                         alt="Company logo"/>Skycresta Solutions</h2></Link>
+            <ul className="grow flex gap-8 justify-end font-semibold">
                 {navCont.map((navItm) => (
                     <Link to={navItm.lnk} key={navItm.lnk}>
-                        <p className="hover:text-orange-500 hover:underline underline-offset-4
+                        <p className="hover:text-accn hover:underline underline-offset-4
                             transition-colors duration-200">{navItm.nme}</p></Link>
                 ))}
-                <p className="hover:text-orange-500 hover:underline underline-offset-4
+                <p className="hover:text-accn hover:underline underline-offset-4
                     transition-colors duration-200" onClick={scrollToFooter}>Contact Us</p>
             </ul>
         </nav>
