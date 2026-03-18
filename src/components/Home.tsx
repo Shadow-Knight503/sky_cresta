@@ -14,19 +14,19 @@ function Home() {
 
     return (
         <section className="text-text">
-            <div className="relative b-cover lg:bg-position-[center_top_40rem] h-[40vh] w-screen"
-                style={bannerStyle}>
-                <h2 className="absolute top-1/8 left-10 text-6xl font-titl text-slate-950">
+            <div className="relative b-cover lg:bg-position-[center_top_35rem] xl:bg-position-[center_top_40rem]
+                h-[45vh] w-screen" style={bannerStyle}>
+                <h2 className="pt-8 pl-4 text-4xl md:text-6xl font-titl text-slate-950 max-h-[70%]">
                     Integrated <span className="text-prim">Infrastructure</span> &
                     <p className=""><span className="text-prim">Engineering</span>
                         {' '}Company in Chennai</p>
-                    <p className="text-2xl w-[20rem] mt-8 hidden md:block">Delivering machinery solutions, civil construction, and
+                    <p className="text-sm md:text-xl font-prim w-2/3 md:w-[25rem] mt-2 md:mt-8">Delivering machinery solutions, civil construction, and
                         interior & exterior development with structured execution and professional excellence.</p>
                 </h2>
-                <div className="absolute bottom-4 right-4">
-                    <button className="bg-prim rounded-xl p-3 text-accn font-semibold ml-4">
+                <div className="absolute bottom-4 md:right-2">
+                    <button className="bg-prim rounded-xl p-3 text-accn font-semibold ml-2">
                         Request a Quote</button>
-                    <button className="bg-prim rounded-xl p-3 text-accn font-semibold ml-4">
+                    <button className="bg-prim rounded-xl p-3 text-accn font-semibold ml-2">
                         Contact Our Team</button>
                 </div>
             </div>
