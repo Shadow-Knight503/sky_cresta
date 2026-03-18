@@ -3,9 +3,9 @@ import MissionImg from "../assets/ConstructionWorkers.jpg"
 
 function VisMis() {
     return (
-        <article className="px-24 mt-24">
+        <article className="px-2 md:px-24 mt-24">
             <section className="flex mt-8 justify-center">
-                <h3 className="text-4xl text-prim font-titl basis-1/2 py-2 pl-8 my-auto">Why Choose Skycresta Solutions?
+                <h3 className="text-4xl text-prim font-titl basis-1/2 grow py-2 pl-8 my-auto">Why Choose Skycresta Solutions?
                     <ul className="text-xl text-text font-prim list-disc mt-4 list-disc">
                         <li>South India-Based Infrastructure Expertise</li>
                         <li>Integrated Engineering Solutions Under One Roof</li>
@@ -15,11 +15,11 @@ function VisMis() {
                         <li>Strong Vendor & Supply Chain Network Across South India</li>
                     </ul>
                 </h3>
-                <img className="basis-1/3 w-12 rounded-2xl" src={VisionImg} alt="Vision Img"/>
+                <img className="hidden md:block basis-1/3 w-12 rounded-2xl" src={VisionImg} alt="Vision Img"/>
             </section>
             <section className="flex mt-8 justify-center">
-                <img className="basis-1/3 w-12 rounded-2xl" src={MissionImg} alt="Mission Img"/>
-                <h3 className="text-4xl text-prim font-titl basis-1/2 py-2 pl-16 my-auto">Operational Strength
+                <img className="hidden md:block basis-1/3 w-12 rounded-2xl" src={MissionImg} alt="Mission Img"/>
+                <h3 className="text-4xl text-prim font-titl basis-1/2 grow py-2 pl-8 md:pl-16 my-auto">Operational Strength
                     <ul className="text-xl text-text font-prim list-decimal list-outside list-disc mt-4">
                         <li>Skilled Engineering & Technical Team</li>
                         <li>Modern Equipment Fleet</li>

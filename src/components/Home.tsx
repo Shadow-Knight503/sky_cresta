@@ -14,7 +14,7 @@ function Home() {
 
     return (
         <section className="text-text">
-            <div className="relative b-cover lg:bg-position-[center_top_35rem] xl:bg-position-[center_top_40rem]
+            <div className="relative b-cover lg:bg-position-[center_top_33rem] xl:bg-position-[center_top_40rem]
                 h-[45vh] w-screen" style={bannerStyle}>
                 <h2 className="pt-8 pl-4 text-4xl md:text-6xl font-titl text-slate-950 max-h-[70%]">
                     Integrated <span className="text-prim">Infrastructure</span> &
