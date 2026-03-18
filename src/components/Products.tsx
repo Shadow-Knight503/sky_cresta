@@ -1,13 +1,13 @@
 function Products() {
     const divisions = [
-        {division: 'Machinery Division – South India',
+        {division: 'Machinery Division (South India)',
             desc: "Reliable equipment solutions backed by responsive after-sales support.",
             content: [{ttl: "Services Include:",
                 list: ["Machinery Rental Services in South India", "Construction Equipment Sales",
                     "Preventive Maintenance Programs", "Emergency Breakdown Support", "Spare Parts Supply",
                     "Annual Maintenance Contracts (AMC)", "Installation & Commissioning", "Operator Training"]}
             ]
-        }, {division: 'Civil Engineering Division – Tamil Nadu',
+        }, {division: 'Civil Engineering Division (Tamil Nadu)',
             desc: "Professional civil construction services with structured execution.",
             content: [{ttl: "Residential Projects", list: ["Villas & Independent Houses", "Apartments",
                     "Gated Community Development", "Layout Infrastructure Works"]},
@@ -15,7 +15,7 @@ function Products() {
                     "Warehouses", "Institutional Buildings"]},
                 {ttl: "Turnkey & Development Projects", list: ["Landowner Partnerships", "End-to-End Project Execution"]},
             ]
-        }, {division: 'Interior & Exterior Solutions Division – South India',
+        }, {division: 'Interior & Exterior Solutions Division (South India)',
             desc: "Design-driven interior and exterior execution for residential and commercial spaces.",
             content: [{ttl: "Residential Interiors", list: ["Modular Kitchens", "Living & Bedroom Design",
                     "False Ceiling & Lighting", "Custom Furniture", "Wardrobes & Storage Solutions",
@@ -30,7 +30,7 @@ function Products() {
     ]
 
     return (
-        <article className="justify-center px-[15%] mt-12 gap-8">
+        <article className="justify-center px-2 md:px-[5rem] mt-12 gap-8">
             <h2 className="text-prim font-titl basis-full text-4xl text-center">Our Core Divisions</h2>
             {divisions.map((division) => (
                 <div className="rounded-lg px-4 w-64 border-4 border-prim bg-prim/15 w-full my-2

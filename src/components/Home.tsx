@@ -14,13 +14,13 @@ function Home() {
 
     return (
         <section className="text-text">
-            <div className="relative bg-position-[center_top_63vh] h-[40vh] w-screen"
+            <div className="relative b-cover lg:bg-position-[center_top_40rem] h-[40vh] w-screen"
                 style={bannerStyle}>
                 <h2 className="absolute top-1/8 left-10 text-6xl font-titl text-slate-950">
                     Integrated <span className="text-prim">Infrastructure</span> &
                     <p className=""><span className="text-prim">Engineering</span>
                         {' '}Company in Chennai</p>
-                    <p className="text-2xl w-1/3 mt-8">Delivering machinery solutions, civil construction, and
+                    <p className="text-2xl w-[20rem] mt-8 hidden md:block">Delivering machinery solutions, civil construction, and
                         interior & exterior development with structured execution and professional excellence.</p>
                 </h2>
                 <div className="absolute bottom-4 right-4">
@@ -30,28 +30,28 @@ function Home() {
                         Contact Our Team</button>
                 </div>
             </div>
-            <article className="flex flex-wrap px-12 mt-8 font-prim">
-                <div className="relative basis-1/2">
-                    <img className="peer z-20 absolute -left-8 h-[40%] hover:scale-120 tranisition-size duration-300"
-                         src={CraneImg1} alt="Crane Image"/>
-                    <img className="absolute left-0 h-[50%] peer-hover:animate-gears" src={GearImg}
-                         alt="Gear Image"/>
-                    <img className="peer z-20 absolute left-48 top-12 h-[70%] hover:scale-120 tranisition-size duration-300"
-                         src={CraneImg2} alt="Crane Image"/>
-                    <img className="absolute left-48 top-12 h-[80%] peer-hover:animate-gears" src={GearImg}
-                         alt="Gear Image"/>
-                    <img className="peer z-20 absolute right-40 h-[30%] hover:scale-120 tranisition-size duration-300"
-                         src={CraneImg3} alt="Crane Image"/>
-                    <img className="absolute right-32 h-[35%] peer-hover:animate-gears" src={GearImg}
-                         alt="Gear Image"/>
+            <article className="flex flex-wrap px-2 md:px-12 mt-8 font-prim">
+                <div className="relative basis-1/2 hidden lg:block">
+                    <img className="peer z-20 absolute -left-8 h-[40%] hover:scale-120
+                        hidden xl:block tranisition-size duration-300" src={CraneImg1} alt="Crane Image"/>
+                    <img className="absolute left-0 h-[50%] peer-hover:animate-gears grayscale opacity-70
+                        hidden xl:block " src={GearImg} alt="Gear Image"/>
+                    <img className="peer z-20 absolute left-0 xl:left-48 top-12 h-[70%] hover:scale-120
+                        hidden lg:block tranisition-size duration-300" src={CraneImg2} alt="Crane Image"/>
+                    <img className="absolute left-0 xl:left-48 top-12 h-[80%] peer-hover:animate-gears grayscale opacity-70
+                        hidden lg:block" src={GearImg} alt="Gear Image"/>
+                    <img className="peer z-20 absolute right-40 h-[30%] hover:scale-120
+                        hidden 2xl:block tranisition-size duration-300" src={CraneImg3} alt="Crane Image"/>
+                    <img className="absolute right-32 h-[35%] peer-hover:animate-gears grayscale opacity-70
+                        hidden 2xl:block" src={GearImg} alt="Gear Image"/>
                 </div>
-                <p className="relative basis-1/2 px-8 text-lg text-justify">
+                <p className="relative basis-1/2 grow px-8 text-lg text-justify">
                     <h3 className="text-3xl text-prim font-titl mb-2">About Skycresta</h3>
                     Skycresta Solutions is a South India based integrated infrastructure and engineering company delivering end-to-end solutions across machinery, civil construction, and interior & exterior development.
-                    <br/>With strong technical expertise and structured project management systems, we serve residential, commercial, and industrial sectors across South India.
+                    <br/>With strong technical expertise and struc  tured project management systems, we serve residential, commercial, and industrial sectors across South India.
                     <br/>From equipment supply and engineering execution to finishing and long-term maintenance support, we provide complete lifecycle infrastructure solutions under one platform.
-                    <br/><br/><span className="text-2xl">We are not only contractors —
-                    <br/>We are also Infrastructure Partners.</span>
+                    <br/><br/><span className="text-xl md:text-2xl font-bold">We're not only contractors —
+                    <br/>We're also Infrastructure Partners.</span>
                     <Link to={"/about"}>
                         <button className="block mt-4 p-3 rounded-lg bg-prim text-accn
                             hover:bg-accn hover:text-prim transition-colors">Know more</button>

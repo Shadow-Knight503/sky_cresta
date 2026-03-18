@@ -21,7 +21,7 @@ function About() {
     });
 
     return (
-        <article className="text-text font-prim px-24">
+        <article className="text-text font-prim px-2 md:px-24">
             <section className="flex min-h-[35vh] px-48 mt-4 gap-8 bg-accn/30 rounded-b-2xl">
                 <div className="bg-left max-w-36 rounded-l-2xl" style={divStyle}></div>
                 <h3 className="grow text-4xl text-center pt-12">Assuring
@@ -34,13 +34,13 @@ function About() {
             </section>
             <section className="mt-18 text-justify">
                 <h2 className="text-3xl font-titl mb-2">Our Chairman's message</h2>
-                <h3 className="text-2xl text-prim">"At Skycresta Solutions, we believe infrastructure development plays a vital role in shaping economic growth and modern communities.
-                <br/><br/>Our mission is to build a professionally managed, performance-driven infrastructure company delivering reliable machinery solutions, high-quality civil construction, and refined interior & exterior environments across South India.
+                <blockquote className="text-2xl text-prim border-l-8 pl-4">"At Skycresta Solutions, we believe infrastructure development plays a vital role in shaping economic growth and modern communities.
+                Our mission is to build a professionally managed, performance-driven infrastructure company delivering reliable machinery solutions, high-quality civil construction, and refined interior & exterior environments across South India.
                 <br/><br/>With a structured operational approach and a commitment to excellence, we strive to create long-term value for our clients and partners.
-                <br/>We look forward to building enduring relationships and contributing to the region’s infrastructure growth."
+                We look forward to building enduring relationships and contributing to the region’s infrastructure growth."
                 <br/><br/>[Chairman Name]
                 <br/>Chairman & Managing Director
-                </h3>
+                </blockquote>
                 <div className="flex justify-center text-center gap-32 mt-8">
                     {countData.map((count, ind) => (
                         <span ref={ref} key={ind}
