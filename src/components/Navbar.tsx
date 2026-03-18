@@ -20,8 +20,7 @@ function Navbar({scrollToFooter}: NavProps) {
                 <h2 className="font-titl flex items-center text-3xl basis-2/3">
                     <img className="size-16 md:m-2" src={Icon}
                          alt="Company logo"/>Skycresta Solutions</h2></Link>
-            <ul className="grow hidden md:flex gap-8 justify-end font-semibold
-            ">
+            <ul className="grow hidden md:flex gap-8 justify-end font-semibold">
                 {navCont.map((navItm) => (
                     <Link to={navItm.lnk} key={navItm.lnk}>
                         <p className="hover:text-accn hover:underline underline-offset-4
@@ -30,9 +29,9 @@ function Navbar({scrollToFooter}: NavProps) {
                 <p className="hover:text-accn hover:underline underline-offset-4
                     transition-colors duration-200" onClick={scrollToFooter}>Contact Us</p>
             </ul>
-            <div className="self-end lg:hidden">
+            <span className="ml-12 border grow lg:hidden">
                 <img className="size-12" src={MenuIcon} alt="Nav Icon"/>
-            </div>
+            </span>
         </nav>
     )
 }

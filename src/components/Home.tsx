@@ -14,13 +14,14 @@ function Home() {
 
     return (
         <section className="text-text">
-            <div className="relative b-cover lg:bg-position-[center_top_33rem] xl:bg-position-[center_top_40rem]
+            <div className="relative animate-banner
                 h-[45vh] w-screen" style={bannerStyle}>
                 <h2 className="pt-8 pl-4 text-4xl md:text-6xl font-titl text-slate-950 max-h-[70%]">
                     Integrated <span className="text-prim">Infrastructure</span> &
                     <p className=""><span className="text-prim">Engineering</span>
                         {' '}Company in Chennai</p>
-                    <p className="text-sm md:text-xl font-prim w-2/3 md:w-[25rem] mt-2 md:mt-8">Delivering machinery solutions, civil construction, and
+                    <p className="text-sm md:text-xl font-prim w-2/3 md:w-[25rem] mt-2 md:mt-8
+                        opacity-0 animate-fadeIn" style={{ animationDelay: "1s" }}>Delivering machinery solutions, civil construction, and
                         interior & exterior development with structured execution and professional excellence.</p>
                 </h2>
                 <div className="absolute bottom-4 md:right-2">

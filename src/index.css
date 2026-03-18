@@ -19,10 +19,24 @@
     --color-text: black;
 
     --animate-gears: Gearing 5s ease infinite;
+    --animate-banner: BannerPanIn 5s ease forwards;
+    --animate-fadeIn: fading 1s ease forwards;
+
+    @keyframes fading {
+        from {opacity: 0} to {opacity: 1}
+    }
 
     @keyframes Gearing {
         100% {
             rotate: 360deg;
+        }
+    }
+
+    @keyframes BannerPanIn {
+        0% {
+            background-position-y: 100%;
+        } 100% {
+            background-position-y: 45%;
         }
     }
 }
