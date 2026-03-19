@@ -20,7 +20,7 @@ function Home() {
                     Integrated <span className="text-prim">Infrastructure</span> &
                     <p className=""><span className="text-prim">Engineering</span>
                         {' '}Company in Chennai</p>
-                    <p className="text-sm md:text-xl font-prim w-2/3 md:w-[25rem] mt-2 md:mt-8
+                    <p className="text-sm md:text-lg font-prim w-2/3 md:w-[25rem] mt-2 md:mt-8
                         opacity-0 animate-fadeIn" style={{ animationDelay: "1s" }}>Delivering machinery solutions, civil construction, and
                         interior & exterior development with structured execution and professional excellence.</p>
                 </h2>

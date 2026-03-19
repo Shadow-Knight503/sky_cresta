@@ -29,8 +29,17 @@ function Navbar({scrollToFooter}: NavProps) {
                 <p className="hover:text-accn hover:underline underline-offset-4
                     transition-colors duration-200" onClick={scrollToFooter}>Contact Us</p>
             </ul>
-            <span className="ml-12 border grow lg:hidden">
-                <img className="size-12" src={MenuIcon} alt="Nav Icon"/>
+            <span className="group/mob relative grow lg:hidden active"
+                onClick={(e) => e.currentTarget.classList.toggle("active")}>
+                <img className="float-right group-[.active]/mob:rotate-180 size-12" src={MenuIcon} alt="Nav Icon"/>
+                <div className="absolute bg-back mt-14 rounded-lg border border-prim hidden group-[.active]/mob:block">
+                    {navCont.map((navItm, ind) => (
+                        <Link to={navItm.lnk} key={navItm.lnk}>
+                            <p className={`hover:text-accn hover:underline p-2 underline-offset-4
+                                transition-colors duration-200 ${ind > 0 ? "border-t-2": ""}`}>
+                                {navItm.nme}</p></Link>
+                    ))}
+                </div>
             </span>
         </nav>
     )
