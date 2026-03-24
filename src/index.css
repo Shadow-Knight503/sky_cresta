@@ -22,6 +22,11 @@
     --animate-banner: BannerPanIn 5s ease forwards;
     --animate-fadeIn: fading 1s ease forwards;
     --animate-dropIn: droppingIn 1s ease-in forwards;
+    --animate-glowUp: glowingUp 0.5s ease-in forwards;
+
+    @keyframes glowingUp {
+        0% {outline-color: lightblue} 50% {outline-color: white;} 100% {outline-color: lightblue;}
+    }
 
     @keyframes fading {
         from {opacity: 0} to {opacity: 1}
