@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import "tailwindcss";
 
 @property --num {
@@ -9,8 +9,8 @@
 }
 
 @theme {
-    --font-titl: "Oswald", sans-serif;
-    --font-prim: "Roboto", sans-serif;
+    --font-titl: "Tektur", sans-serif;
+    --font-prim: "IBM Plex Sans Condensed", sans-serif;
 
     --color-prim: navy;
     --color-secd: grey;
@@ -21,9 +21,14 @@
     --animate-gears: Gearing 5s ease infinite;
     --animate-banner: BannerPanIn 5s ease forwards;
     --animate-fadeIn: fading 1s ease forwards;
+    --animate-dropIn: droppingIn 1s ease-in forwards;
 
     @keyframes fading {
         from {opacity: 0} to {opacity: 1}
+    }
+
+    @keyframes droppingIn {
+        from {transform: translateY(-30vh);} to {transform: translateY(0);}
     }
 
     @keyframes Gearing {

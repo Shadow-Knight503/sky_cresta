@@ -11,13 +11,14 @@ import Services from "./components/Services.tsx";
 import ServiceTiles from "./components/ServiceTiles.tsx";
 import Gallery from "./components/Gallery.tsx";
 import Socials from "./components/Socials.tsx";
+import Testimonials from "./components/Testimonials.tsx";
 
 const router = createBrowserRouter([{
         path: "/",
         element: <App />,
         children: [{
             index: true,
-            element: [<Home />, <Products />]
+            element: [<Home />, <Products />, <Testimonials />]
         }, {
             path: "about",
             element: [<About />, <VisMis />]

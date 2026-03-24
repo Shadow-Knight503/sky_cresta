@@ -15,7 +15,7 @@ function Navbar({scrollToFooter}: NavProps) {
 
     return (
         <nav className="fixed top-0 w-screen z-50 flex items-center bg-back
-            text-prim font-prim text-lg lg:px-[10vmin]">
+            text-prim font-prim text-lg lg:px-[10vmin] border-b-4 border-prim">
             <Link to={"/"}>
                 <h2 className="font-titl flex items-center text-3xl basis-2/3">
                     <img className="size-16 md:m-2" src={Icon}
