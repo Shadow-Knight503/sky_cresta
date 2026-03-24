@@ -41,12 +41,12 @@ function Products() {
             <h2 className="text-prim font-titl basis-full text-4xl text-center">Our Core Divisions</h2>
             {divisions.map((division) => (
                 <div className="rounded-lg px-4 w-64 w-full my-4
-                    hover:scale-105 transition-transform duration-200 ease-in-out font-semibold">
+                    transition-transform duration-200 ease-in-out font-semibold">
                     <h2 className="basis-2/5 text-2xl font-titl inline">{division.division}</h2> -
                     <span className="basis-3/5"> {division.desc}</span>
                     <hr className="w-1/9 text-prim border-t-4 basis-full"/>
                     {division.content.map((content) => (
-                        <div className="flex flex-wrap hover:bg-prim/10 my-2 p-2">
+                        <div className="flex flex-wrap hover:bg-prim/10 rounded-xl my-2 p-2">
                             <h3 className="basis-full pb-2">{content.ttl}</h3>
                             <div className="flex flex-wrap gap-2">
                                 {content.list.map((itm, inx) => (

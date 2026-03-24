@@ -61,12 +61,12 @@ function Home() {
                     </div>
                 </div>
                 <div className="absolute bottom-4 md:right-2">
-                    <button className="text-white rounded-xl text-xl font-titl font-semibold p-3 bg-sky-500 ml-6
-                        outline-sky-500 outline-2 outline-offset-4 animate-glowUp [animation-delay:4s]">
+                    <button className="text-white rounded-xl text-xl font-titl font-semibold p-3 bg-prim ml-6
+                        outline-prim outline-2 outline-offset-4 animate-glowUp [animation-delay:2s]">
                         Request a Quote
                     </button>
-                    <button className="text-white rounded-xl text-xl font-titl font-semibold p-3 bg-sky-500 ml-6
-                        outline-sky-500 outline-2 outline-offset-4 animate-glowUp [animation-delay:4s]">
+                    <button className="text-white rounded-xl text-xl font-titl font-semibold p-3 bg-prim ml-6
+                        outline-prim outline-2 outline-offset-4 animate-glowUp [animation-delay:2s]">
                         Contact Our Team
                     </button>
                 </div>
